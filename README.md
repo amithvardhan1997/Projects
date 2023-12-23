@@ -59,4 +59,5 @@
    - Go to the EC2 instance details, then to security and click on the security group that we have created at the time of launching the instance.
    - Edit inbound rules. Add port number 80 (nginx port) and save.
    - Now, copy the instance public IP and paste it into any browser's search bar and add ":80".
-   - 
+## Deployment Video:
+![p-1.mp4]
