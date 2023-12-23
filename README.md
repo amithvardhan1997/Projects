@@ -11,10 +11,10 @@
      sudo-s # super user (root)
      ```
      ```bash
-     apt-get update
+     apt-get update # update package index
      ```
      ```bash
-     clear
+     clear # clear the screen
      ```
 2. **Nginx installation:**
    - ```bash
@@ -24,21 +24,39 @@
    - ```bash
      systmctl status nginx #to start
      ```
-   - To restart the nginx
    - ```bash
-     systmctl restart nginx
+     systmctl restart nginx # to restart the nginx
    - After Nginx got installed go to the  nginx path ie.,
    - ```bash
      cd /var/www/html/
      ```
    - You can find the .html file there.
+   - ```bash
+     cat index.html #to view the file
+     ```
+   - ```bash
+     vi index.html # to edit the data inside the file
+     ```
 3. **Clone the Repository:**
    - Clone the Repository from the GIT Hub to the instance.
    - ```bash
-     git clone https://github.com/your-username/your-repository.git
+     git clone https://github.com/your-username/your-repository.git #copy paste the link from the github repository
      ```
-   - Now open that Repository
    - ```bash
-     cd repository_name
+     cd repository_name # open that Repository
      ```
-   - Now 
+   - Now we have to move all the files inside the repository to the html directory
+   - ```bash
+     mv * ../ #to move all the files from this repository to one step back
+     ```
+   - ```bash
+     cd .. #one step back
+     ```
+   - ```bash
+     em -rf repository-name #remove the empty repository since all the files inside it have already been moved
+     ```
+4. **Access the Web Page**
+   - Go to the EC2 instance details, then to security and click on the security group that we have created at the time of launching the instance.
+   - Edit inbound rules. Add port number 80 (nginx port) and save.
+   - Now, copy the instance public IP and paste it into any browser's search bar and add ":80".
+   - 
