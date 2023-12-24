@@ -1,7 +1,7 @@
 # PROJECT-1
 ## Title:   Deployment of a Web Page
 ### Deployment of a web page using Amazon EC2 instance, GIT Hub and Nginx in the AWS Cloud Platform.
-![P-1.png](images/p-1.png)
+_______________________![P-1.png](images/p-1.png)
 ## Deployment Steps
 1. **Amazon EC2 Instance Creation:**
    - Launch an EC2 instance on the AWS console.
@@ -60,4 +60,8 @@
    - Edit inbound rules. Add port number 80 (nginx port) and save.
    - Now, copy the instance public IP and paste it into any browser's search bar and add ":80".
 ## Deployment Video:
-![p-1.mp4]
+[Watch the full video](videos/p-1.mp4)
+
+
+
+
