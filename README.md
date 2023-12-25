@@ -67,5 +67,5 @@ ________________________________________________________________________________
 ## Title: Deployment of a web page
 #### Deployment of a web page using Amazon EC2 instances, Application Load Balancing, Route 53, domain from hostinger, and GIT Hub.
 ### Architecture:
-![p-2.png](images/p-2.png)
+![p2.png](images/p2.png)
 
