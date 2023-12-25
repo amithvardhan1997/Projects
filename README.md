@@ -67,5 +67,42 @@ ________________________________________________________________________________
 ## Title: Deployment of a web page
 #### Deployment of a web page using Amazon EC2 instances, Application Load Balancing, Route 53, domain from hostinger, and GIT Hub.
 ### Architecture:
-![p2.png](images/p2.png)
-
+_______________![p2.png](images/p2.png)
+1. **EC2 instances creation:
+   - Create two or more EC2 instances.
+   - Install nginx or apache2 in both the instances that you have created.
+     ```bash
+     sudo -s
+     ```
+     ```bash
+     apt-get update
+     ```
+     ```bash
+     apt-get install nginx -y
+     ```
+     or
+     ```bash
+     apt-get install apache2 -y
+     ```
+   - Now open the nginx/apache2 file path.
+     ```bash
+     cd /var/www/html
+     ```
+   - Now open github account and copy the url of the file that which you want to deploy and add to these instances.
+     ```bash
+     git clone "paste_the_github_url_here"
+     ```
+     ```bash
+     cd file_name
+     ```
+     ```bash
+     mv * ..
+     ```
+     ```bash
+     cd ..
+     ```
+     ```bash
+     rm -rf file_name
+     ```
+   - Now edit the bound rules in the security groups of the instances and add port 80 in it where nginx and apache port number is 80.
+2. **
