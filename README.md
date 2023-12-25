@@ -107,5 +107,5 @@ _______________![p2.png](images/p2.png)
    - Now edit the bound rules in the security groups of the instances and add port 80 (nginx and apache port= 80)
 2. **Load Balancing:**
    - First of all, we have to create a Target group by assigning one name.
-   - Now create load balancer and in that create the Application Load Balancer, 
+   - Now create load balancer and in that create the Application Load Balancer, and in that  
    - 
