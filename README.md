@@ -64,11 +64,11 @@ _______________________![P-1.png](images/p-1.png)
 
 __________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 # PROJECT-2
-## Title: Deployment of a web page
+## **Title:** Deployment of a web page
 #### Deployment of a web page using Amazon EC2 instances, Application Load Balancing, Route 53, domain from hostinger, and GIT Hub.
 ### Architecture:
 _______________![p2.png](images/p2.png)
-1. **EC2 instances creation:
+1. **EC2 instances creation:**
    - Create two or more EC2 instances.
    - Install nginx or apache2 in both the instances that you have created.
      ```bash
@@ -88,7 +88,7 @@ _______________![p2.png](images/p2.png)
      ```bash
      cd /var/www/html
      ```
-   - Now open github account and copy the url of the file that which you want to deploy and add to these instances.
+   - Now open github account and copy the url of the file which you want to deploy and add to these instances.
      ```bash
      git clone "paste_the_github_url_here"
      ```
@@ -104,5 +104,8 @@ _______________![p2.png](images/p2.png)
      ```bash
      rm -rf file_name
      ```
-   - Now edit the bound rules in the security groups of the instances and add port 80 in it where nginx and apache port number is 80.
-2. **
+   - Now edit the bound rules in the security groups of the instances and add port 80 (nginx and apache port= 80)
+2. **Load Balancing:**
+   - First of all, we have to create a Target group by assigning one name.
+   - Now create load balancer and in that create the Application Load Balancer, 
+   - 
